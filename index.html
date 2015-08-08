@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <title>blogMap</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' /> 
+    <link href='/css/main-page.css' rel='stylesheet' />
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+    <img id="bm_logo" src="images/bm_logo.png" alt="Logo" align="center"/>
+    <p id="layoutbreak">DISCOVER YOUR CITY THROUGH LOCAL BLOG ARTICLES ON A MAP</p>
+</div>
+<div class="colmask leftmenu">
+    <div class="colright">
+        <div class="col1wrap">
+            <div class="col1">
+                <div id="col1txt">
+                    <h2>Mapping the Built Environment by Local Blog Articles</h2>
+                    <p>BlogMap is a mobile and web application that aggregates and geocodes local blog articles on historic architecture, cobble stone street and other hidden finds. All those blog posts are then made available on a map so you can explore the best local content spatially. If you want to see what's near you then download the mobile application (iOS only for now, but we're working on an Android application).</p>
+                    <p>We're only in Manhattan, Brooklyn and Philadelphia, but we're expanding to more cities. Washington DC should be available shortly!</p>
+                    <h2>Try It Out:</h2>
+                    <p>1. Zoom in to view a single marker</p>
+                    <p>2. Click marker to view article details and link</p>
+                    <ul id="citybuttons">
+                    <li id="1">Manhattan</li>
+                    <li id="2" class="active">Brooklyn</li>
+                    <li id="3">Philadelphia</li>
+                    </ul>
+                </div>
+                <div id='map'></div><br/>
+                <button id="full-page-map"><a id="go-full-page" href="pages/map.html">CLICK TO VIEW MAP ON FULL PAGE</a></button>
+            </br>
+            
+            </div>
+        </div>
+            <div class="col2">
+                <img id="appstores"src="images/App_Store_Badge_135x40.svg" alt="App Store"/>
+                <dl id="linkList">
+                    <dt><a id="appstore_links" href="https://itunes.apple.com/us/app/brooklyn-city-guide-by-blogmap/id1010898388?mt=8">Brooklyn Version</a></dt>
+                    <dt><a id="appstore_links" href="https://itunes.apple.com/us/app/manhattan-city-guide-by-blogmap/id1018127600?mt=8">Manhattan Version</a></dt>
+                    <dt><a id="appstore_links" href="https://itunes.apple.com/us/app/philadelphia-city-guide-by/id1006370280?mt=8">Philadelphia Version</a></dt>
+                    <dt><a id="appstore_links">D.C. Coming Soon!</a></dt>
+                </dl>
+                <h2>Follow blogMap:</h2>
+                <ul id="social-media">
+                    <li><a href="https://www.facebook.com/pages/BlogMap/881418721928515?fref=ts"><img id="social-img" src="images/fb_logo.png" alt="" title=""></a></li>
+                    <li><a href="https://twitter.com/blogmap"><img id="social-img" src="images/twitter_logo.png" alt="" title=""></a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<div id="footer">
+    <p>&copy; 2015 Jacob Colleran</p>
+</div>
+</div>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' /> 
+
+<script src="php/api_key.js.php"></script>
+<script src="js/maps.js"></script>
+<script src="js/buttons.js"></script>
+
+
+</body>
+</html>

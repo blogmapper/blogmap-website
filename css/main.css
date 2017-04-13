@@ -1,0 +1,406 @@
+
+
+body {
+    background-image: url('../images/ios-linen.jpg');
+    background-repeat: repeat;
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    margin: 0 auto;
+    width: 95%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#map { 
+    position:absolute;
+    border-radius: 10px;  
+    bottom: 40px;
+    top: 100px;
+    height: 80%;
+    width:95%; 
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+/* About Page Section */
+
+.about_section, .app_section {
+    background-image: url('../images/mapBackground5.png'); 
+    position:absolute;
+    border-radius: 10px;  
+    height: 80%;
+    width:95%; 
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+
+.about_section h1 {
+    float: left;
+    margin: 80px 150px 30px 150px;
+}
+
+.about_section p {
+    float: left;
+    margin: 10px 150px 0px 150px;
+}
+
+/* App Page Section */
+
+.app_section .caption{
+    position: relative;
+    max-width: 500px;
+    margin-left: 40%;
+    top: 50%;
+    transform:translate(0%,-50%);
+    -webkit-transform:translate(0,-50%);
+    -moz-transform:translate(0,-50%);
+    -o-transform:translate(0,-50%);
+}
+
+a.app_store_btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    min-width: 250px;
+    border: 2px solid #525252;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin: 20px 20px 10px 0;
+
+    color: #525252;
+    font-family: "open_semibold", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.iphone_icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-bottom: 3px;
+}
+
+.iphone_icon{
+    background: url('../images/iphone_app.png') no-repeat;
+}
+
+a.app_store_btn:hover,
+a.app_store_btn:focus{
+    border-color: #41c27d;
+    color: #41c27d!important;
+}
+
+a.app_store_btn:hover .iphone_icon{
+    background: url('../images/iphone_app_hover.png') no-repeat;
+}
+
+
+/* leaflet popup css */
+
+.leaflet-popup-content {
+        width: 320px;
+ }
+.leaflet-popup-content img {
+        max-width: 100%;
+}
+.leaflet-popup-content input {
+        /*background-color: #26F2C3;*/
+        width: 100%;
+        font-size:14px;
+        background-color: #3887BE;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        margin: 0px;
+        padding: 10px;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: 'Open Sans Bold', sans-serif;
+        line-height: 20px;
+        font-size: 14px;
+        -webkit-appearance: none;
+        -webkit-font-smoothing: antialiased;
+}
+
+.leaflet-popup-content input:hover {
+        background-color: #3074a4;
+}
+
+
+
+/* Header Section */
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    background-color: #14441c17d;
+
+}
+
+header .logo{
+    display: table-cell;
+    margin: 30px 100px 0 0;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .burger_icon{
+    display: none;
+    float: right;
+    background: #ffffff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+
+    color: #1C9A1C;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+
+    margin: 45px 10px 0 0;
+}
+
+header .burger_icon:hover{
+    cursor: pointer;
+}
+
+header .burger_icon.active{
+    background: #1C9A1C;
+    color: #ffffff;
+}
+
+
+a:hover#menu-icon {
+    background-color: #444;
+    border-radius: 4px 4px 0 0;
+}
+
+header nav{
+    display: table-cell;
+    margin-top: 45px;
+}
+
+header nav li{
+    float: left;
+    margin-left: 40px;
+}
+
+header nav li:first-child{
+    margin: 0;
+}
+
+header nav li a{
+    color: #fff;
+    font-family: "open_regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+header nav li a:hover,
+header nav li a:focus{
+    text-decoration: none;
+    color: #B7EFD1!important;
+}
+
+header .social{
+    display: table-cell;
+    margin-top: 45px;
+}
+
+header .social li{
+    float: left;
+    margin-left: 20px;
+}
+
+header .social li:first-child{
+    margin: 0;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #14441c17d;
+    text-align: center;
+
+}
+
+footer p {
+    color: #fff;
+}
+
+/* App Store Badge */
+
+.app-store-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+/*Menu on map*/
+
+.menu-ui {
+  background:#fff;
+  position:absolute;
+  top:10px;right:10px;
+  z-index:1;
+  border-radius:3px;
+  width:150px;
+  border:1px solid rgba(0,0,0,0.4);
+  }
+.menu-ui a {
+    font-family: futura;
+    font-size:13px;
+    color:#404040;
+    display:block;
+    margin:0;padding:0;
+    padding:5px 10px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    text-align:center;
+    }
+.menu-ui a:first-child {
+    border-radius:3px 3px 0 0;
+    }
+.menu-ui a:last-child {
+    border:none;
+    border-radius:0 0 3px 3px;
+    }
+.menu-ui a:hover {
+    background:#f8f8f8;
+    color:#404040;
+    }
+.menu-ui a.active {
+    background:#1C9A1C;
+    color:#FFF;
+    }
+.menu-ui a.return {
+    background:#3887BE;
+    color:#FFF;
+    }
+.menu-ui a.return:hover {
+    background:#3074a4;
+    }
+
+/*      Responsive CSS      */
+
+
+@media (max-width: 360px) {
+    .featured_on li{
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+
+    /*      Header      */
+    header .logo{
+        margin-right: 0;
+    }
+
+    header .burger_icon{
+        display: block;
+    }
+
+    header nav {
+        width: 100%;
+        float: none;
+        background-image: url('../images/ios-linen.jpg');
+        position: absolute;
+        margin-top: 100px;
+        left: 0;
+        display: none;
+    }
+
+    header nav.show {
+        display: block;
+    }
+
+    header nav li{
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    header nav li a{
+        display: block;
+        width: 100%;    
+        padding: 20px 0;
+        border-bottom: 1px solid #389965;
+    }
+
+    header nav li:first-child a{
+        border-top: 1px solid #389965;
+    }
+
+    header .social{
+        display: none;
+    }
+
+    header .social li{
+        margin-left: 10px;
+    }
+
+    /* About Section */
+
+    .about_section h1 {
+    float: left;
+    margin: 80px 50px 30px 50px;
+    }
+
+    .about_section p {
+    float: left;
+    margin: 10px 50px 0px 50px;
+    }
+
+    /* App Section */
+
+    .app_section .caption{
+        margin-left: 15%;
+    
+}
+
+
+
+}
+
+@media (max-height: 650px) {
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+
